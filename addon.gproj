@@ -1,0 +1,8 @@
+GameProject {
+ ID "Dogtags"
+ GUID "5C7AECFA99A4BF99"
+ TITLE "Dogtags"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}
