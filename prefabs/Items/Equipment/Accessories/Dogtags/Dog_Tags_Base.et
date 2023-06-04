@@ -24,12 +24,11 @@ DogTagEntity {
       PreviewPrefab "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et"
      }
     }
-    CommonItemType "WATCH"
-    m_SlotType SLOT_GADGETS_STORAGE
+    m_SlotType SLOT_LOADOUT_STORAGE
    }
   }
   MeshObject "{5D887E27EA3B722D}" {
-   Object "{8323368C426DCD34}Assets/Items/Equipment/Accessories/DogTag/DogTag_Item.xob"
+   Object "{199CF8BC8625F201}Assets/Items/Equipment/Accessories/DogTag/DogTag_Item.xob"
   }
   Hierarchy "{5D887E270B7C617D}" {
   }
@@ -52,13 +51,11 @@ DogTagEntity {
     }
    }
   }
-  SP_UnretrievableComponent "{5D887E2706D11BDF}" {
-  }
   BaseLoadoutClothComponent "{5D887E27A0A98877}" {
-   AreaType LoadoutWatchArea "{5D887E27A62FEC5F}" {
+   AreaType ZEL_NeckArea "{5D887E27A62FEC5F}" {
    }
-   WornModel "{BA25FBFBE9C420EC}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
-   ItemModel "{8323368C426DCD34}Assets/Items/Equipment/Accessories/DogTag/DogTag_Item.xob"
+   WornModel "{8923F8958D461FF1}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
+   ItemModel "{199CF8BC8625F201}Assets/Items/Equipment/Accessories/DogTag/DogTag_Item.xob"
   }
   RplComponent "{5D887E27EC871183}" {
   }

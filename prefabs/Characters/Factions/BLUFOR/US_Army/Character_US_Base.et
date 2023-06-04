@@ -1,12 +1,13 @@
-SCR_ChimeraCharacter : "{37578B1666981FCE}Prefabs/Characters/Core/Character_Base.et" {
+SCR_ChimeraCharacter : "{37578B1666981FCE}prefabs/Characters/Core/Character_Base.et" {
  ID "520EC961A090BBD5"
  components {
   SCR_CharacterInventoryStorageComponent "{520EA1D2DB118DAC}" {
    components {
     SCR_EquipmentStorageComponent "{56B49DA9722B635D}" {
      InitialStorageSlots {
+      SCR_EquipmentStorageSlot BinocularSlot {
+      }
       SCR_EquipmentStorageSlot WristwatchSlot {
-       Prefab ""
       }
      }
     }
@@ -14,10 +15,8 @@ SCR_ChimeraCharacter : "{37578B1666981FCE}Prefabs/Characters/Core/Character_Base
   }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {
-    LoadoutSlotInfo DogTag {
+    LoadoutSlotInfo Neck {
      Prefab "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et"
-     AreaType LoadoutWatchArea "{5D889429E3CD068C}" {
-     }
     }
    }
   }
