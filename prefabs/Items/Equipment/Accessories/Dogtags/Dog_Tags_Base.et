@@ -24,7 +24,7 @@ DogTagEntity {
       PreviewPrefab "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et"
      }
     }
-    m_SlotType SLOT_LOADOUT_STORAGE
+    CommonItemType "DogTag"
    }
   }
   MeshObject "{5D887E27EA3B722D}" {
@@ -33,6 +33,8 @@ DogTagEntity {
   Hierarchy "{5D887E270B7C617D}" {
   }
   RigidBody "{5D887E270C055946}" {
+   Enabled 0
+   ModelGeometry 1
   }
   SCR_SoundDataComponent "{5D887E2749497D08}" {
    m_aAudioSourceConfiguration {

@@ -8,7 +8,7 @@ class DogTagEntity: GameEntity
 	
 	void GetCname(out string name)
 	{
-		name = charname;	
+		name = charname;
 	}
 	
 	override event protected void EOnInit(IEntity owner)
@@ -33,12 +33,26 @@ class DogTagEntity: GameEntity
 			{
 				SCR_CharacterIdentityComponent CharID = SCR_CharacterIdentityComponent.Cast(parent.FindComponent(SCR_CharacterIdentityComponent));
 				SCR_CharacterRankComponent RankC = SCR_CharacterRankComponent.Cast(parent.FindComponent(SCR_CharacterRankComponent));
-				FactionAffiliationComponent fact = FactionAffiliationComponent.Cast(parent.FindComponent(FactionAffiliationComponent));
-				SCR_Faction faction = SCR_Faction.Cast(fact.GetAffiliatedFaction());
-				SCR_ECharacterRank rank = RankC.GetCharacterRank(parent);
-				charname = faction.GetRankName(rank) + " " + CharID.GetIdentity().GetFullName();
+				charname = RankC.GetCharacterRankName(parent) + " " + CharID.GetIdentity().GetName() + " " + CharID.GetIdentity().GetSurname();
 				ClearEventMask(EntityEvent.FRAME);
 			}
 		}
 	};
 }
+class SP_DogtagPredicate : InventorySearchPredicate
+{
+
+	override protected bool IsMatch(BaseInventoryStorageComponent storage, IEntity item, array<GenericComponent> queriedComponents, array<BaseItemAttributeData> queriedAttributes)
+	{
+		DogTagEntity tag = DogTagEntity.Cast(item);
+		if(tag)
+		{
+			return true;
+		}
+		return false;
+	}
+}
+modded enum ECommonItemType
+{
+	DogTag
+};
