@@ -25,7 +25,6 @@ class DogTagEntity: GameEntity
 				PlayerManager mngr = GetGame().GetPlayerManager();
 				int pid = mngr.GetPlayerIdFromControlledEntity(parent);
 				charname = mngr.GetPlayerName(pid);
-				ClearEventMask(EntityEvent.FRAME);
 				return;
 			}
 			parent = ChimeraCharacter.Cast(parent);
@@ -34,8 +33,11 @@ class DogTagEntity: GameEntity
 				SCR_CharacterIdentityComponent CharID = SCR_CharacterIdentityComponent.Cast(parent.FindComponent(SCR_CharacterIdentityComponent));
 				SCR_CharacterRankComponent RankC = SCR_CharacterRankComponent.Cast(parent.FindComponent(SCR_CharacterRankComponent));
 				charname = RankC.GetCharacterRankName(parent) + " " + CharID.GetIdentity().GetName() + " " + CharID.GetIdentity().GetSurname();
-				ClearEventMask(EntityEvent.FRAME);
 			}
+		}
+		if (charname)
+		{
+			ClearEventMask(EntityEvent.FRAME);
 		}
 	};
 }

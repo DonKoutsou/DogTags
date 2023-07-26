@@ -1,0 +1,36 @@
+GenericEntity : "{07B1F856943B7075}Prefabs/Characters/Vests/Vest_M69/Vest_M69_base.et" {
+ coords 126.346 1 176.068
+}
+GameEntity : "{17F335BF60DD2550}Prefabs/Characters/Core/Headgear_Base.et" {
+ components {
+  InventoryItemComponent "{5244E4431E28A759}" {
+   Attributes ItemAttributeCollection "{5244E4431DA56D64}" {
+    CustomAttributes {
+     SP_ClothAttributes "{5DF4F66849ADCFBF}" {
+     }
+    }
+   }
+  }
+ }
+ coords 126.901 1 174.843
+}
+GenericEntity : "{4B57C11AA5161760}Prefabs/Characters/Vests/Vest_PASGT/Vest_PASGT.et" {
+ coords 126.556 1 176.731
+}
+GenericEntity : "{80C8C9227D2C7CF5}Prefabs/Characters/Core/Footwear_Base.et" {
+ coords 125.727 1 174.417
+}
+GameEntity : "{9F546CCA2582D16F}Prefabs/Characters/Uniforms/Jacket_M88.et" {
+ coords 130.283 1.001 184.046
+}
+GenericEntity : "{ADE19B33DCBB9005}Prefabs/Characters/Vests/Vest_6B2/Vest_6B2.et" {
+ coords 127.168 1 176.076
+}
+$grp GameEntity : "{B89432A8B5F489E5}Prefabs/Characters/Core/Uniform_Base.et" {
+ {
+  coords 128.833 1.001 183.926
+ }
+ {
+  coords 128.25 1 174.928
+ }
+}
