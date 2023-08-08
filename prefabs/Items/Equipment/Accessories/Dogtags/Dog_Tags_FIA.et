@@ -16,6 +16,13 @@ DogTagEntity : "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Do
     "{5C11E6D26F1651EF}Assets/Items/Equipment/Accessories/DogTag/data/M_DogTag_FIA.emat"
    }
   }
+  ActionsManagerComponent "{5E0ECDDDB47A6F7C}" {
+   ActionContexts {
+    UserActionContext "{5174C3E8FCFF0CEB}" {
+     Radius 1
+    }
+   }
+  }
  }
- coords 1292.273 37.761 2863.521
+ coords 3529.522 0.376 1884.813
 }

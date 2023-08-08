@@ -34,7 +34,9 @@ DogTagEntity {
   }
   RigidBody "{5D887E270C055946}" {
    Enabled 0
-   ModelGeometry 1
+   SimState None
+   ModelGeometry 0
+   Static 1
   }
   SCR_SoundDataComponent "{5D887E2749497D08}" {
    m_aAudioSourceConfiguration {
@@ -59,8 +61,25 @@ DogTagEntity {
    WornModel "{8923F8958D461FF1}Assets/Items/Equipment/Accessories/DogTag/DogTag.xob"
    ItemModel "{199CF8BC8625F201}Assets/Items/Equipment/Accessories/DogTag/DogTag_Item.xob"
   }
+  ActionsManagerComponent "{5E0ECDDDB47A6F7C}" : "{366E157111FAB76C}Prefabs/Characters/Core/Actions/ActionsManager_PickUp.ct" {
+   ActionContexts {
+    UserActionContext "{5174C3E8FCFF0CEB}" {
+     Position PointInfo "{5174C3E8FCFF0CEC}" {
+      Offset 0 0.0149 0
+     }
+     Radius 1
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{52A690747B542687}" {
+     ParentContextList {
+      "default"
+     }
+    }
+   }
+  }
   RplComponent "{5D887E27EC871183}" {
   }
  }
- coords 124.031 1.001 249.081
+ coords 101.66 1 193.278
 }
