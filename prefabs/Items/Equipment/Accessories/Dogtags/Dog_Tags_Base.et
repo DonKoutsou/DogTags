@@ -10,8 +10,8 @@ DogTagEntity {
     ItemPhysAttributes ItemPhysicalAttributes "{5D887E2780DF6A4A}" {
      Weight 0.01
      SizeSetupStrategy Manual
-     ItemDimensions 0.5 0.5 0.5
-     ItemVolume 5
+     ItemDimensions 4 4 4
+     ItemVolume 40
     }
     CustomAttributes {
      PreviewRenderAttributes "{5D887E24D0E6CF50}" {
