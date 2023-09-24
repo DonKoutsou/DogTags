@@ -15,8 +15,21 @@ FrameWidgetClass {
           VerticalLayoutWidgetClass "{000000008568C576}" {
            Prefab "{000000008568C576}"
            {
-            HorizontalLayoutWidgetClass "{00000000A09F13EE}" {
-             Prefab "{00000000A09F13EE}"
+            HorizontalLayoutWidgetClass "{5A8AACE485B8303E}" {
+             Prefab "{5A8AACE485B8303E}"
+             {
+              TextWidgetClass "{0000000042F965D9}" {
+               Prefab "{0000000042F965D9}"
+               FontProperties FontProperties "{5222C61204238C11}" {
+                Font "{B5A3B106F88FF20E}UI/Fonts/Greek.fnt"
+               }
+              }
+             }
+            }
+            VerticalLayoutWidgetClass "{5E709A59C8B021B8}" {
+             Name "VerticalLayout0"
+             Slot LayoutSlot "{5E709A59C8B0219F}" {
+             }
              {
               TextWidgetClass "{5D887E26CFF5D185}" {
                Name "ItemInfo_CharName"

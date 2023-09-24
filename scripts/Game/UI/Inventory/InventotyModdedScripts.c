@@ -79,7 +79,14 @@ modded class SCR_InventoryMenuUI : UIInfo
 		if ( !itemInfo )
 			HideItemInfo();
 		else
-			ShowItemInfo( itemInfo.GetName(), itemInfo.GetDescription(), invItemComp.GetTotalWeight(), SCR_InventoryUIInfo.Cast(itemInfo) );
+		{
+			SCR_InventoryUIInfo inventoryInfo = SCR_InventoryUIInfo.Cast(itemInfo);
+			
+			if (inventoryInfo)
+				ShowItemInfo( inventoryInfo.GetInventoryItemName(invItemComp), inventoryInfo.GetInventoryItemDescription(invItemComp), invItemComp.GetTotalWeight(), inventoryInfo);
+			else 
+				ShowItemInfo( itemInfo.GetName(), itemInfo.GetDescription(), invItemComp.GetTotalWeight(), null);
+		}
 	
 		//show the weight on the progressbar
 		//TODO: overlap or add on the end, depending on if the item is already in the storage or is going to be added
@@ -115,16 +122,7 @@ modded class SCR_InventoryItemInfoUI
 	{
 		if( !w )
 			return;
-		m_infoWidget		= w;
-		m_wTextName 		= TextWidget.Cast( w.FindAnyWidget( "ItemInfo_name" ) );
-		m_wTextDescription 	= TextWidget.Cast( w.FindAnyWidget( "ItemInfo_description" ) );
-		m_wTextWeight 		= TextWidget.Cast( w.FindAnyWidget( "ItemInfo_weight" ) );
-		m_wTextWeightUnit	= TextWidget.Cast( w.FindAnyWidget( "ItemInfo_weightUnit" ) );
+		super.HandlerAttached(w);
 		m_wTextCharName		= TextWidget.Cast( w.FindAnyWidget( "ItemInfo_CharName" ) );
-		m_wItemIcon 		= ImageWidget.Cast(w.FindAnyWidget("ItemInfo_icon"));
-		Widget wItemInfo	= m_infoWidget.FindAnyWidget( "ItemInfo" );
-		if ( !wItemInfo )
-			return;
-		m_pFrameSlotUI 		= SCR_SlotUIComponent.Cast( wItemInfo.FindHandler( SCR_SlotUIComponent ) );
 	}
 }

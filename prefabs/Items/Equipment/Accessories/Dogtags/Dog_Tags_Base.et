@@ -8,10 +8,10 @@ DogTagEntity {
      Description "Dogtag carried by each unit of major Military groups. Its used to identify dead bodies found on the field"
     }
     ItemPhysAttributes ItemPhysicalAttributes "{5D887E2780DF6A4A}" {
-     Weight 0.01
+     Weight 0.005
      SizeSetupStrategy Manual
-     ItemDimensions 4 4 4
-     ItemVolume 40
+     ItemDimensions 0.5 0.5 0.5
+     ItemVolume 1
     }
     CustomAttributes {
      PreviewRenderAttributes "{5D887E24D0E6CF50}" {
@@ -24,13 +24,11 @@ DogTagEntity {
       PreviewPrefab "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Dog_Tags_Base.et"
      }
     }
-    CommonItemType "DogTag"
+    CommonItemType "NONE"
    }
   }
   MeshObject "{5D887E27EA3B722D}" {
    Object "{199CF8BC8625F201}Assets/Items/Equipment/Accessories/DogTag/DogTag_Item.xob"
-  }
-  Hierarchy "{5D887E270B7C617D}" {
   }
   RigidBody "{5D887E270C055946}" {
    Enabled 0
@@ -79,6 +77,8 @@ DogTagEntity {
    }
   }
   RplComponent "{5D887E27EC871183}" {
+  }
+  Hierarchy "{5D887E270B7C617D}" {
   }
  }
  coords 101.66 1 193.278
