@@ -10,7 +10,10 @@ class DogTagEntity: GameEntity
 	{
 		name = charname;
 	}
-	
+	void SetCname(string name)
+	{
+		charname = name;
+	}
 	override event protected void EOnInit(IEntity owner)
 	{
 		SetEventMask(EntityEvent.FRAME);
@@ -20,13 +23,23 @@ class DogTagEntity: GameEntity
 		if(!charname)
 		{
 			IEntity parent = owner.GetParent();
-			if(parent && EntityUtils.IsPlayer(parent))
+
+			PlayerManager mngr = GetGame().GetPlayerManager();
+			int pid = mngr.GetPlayerIdFromControlledEntity(parent);
+			if (pid == 0)
 			{
-				PlayerManager mngr = GetGame().GetPlayerManager();
-				int pid = mngr.GetPlayerIdFromControlledEntity(parent);
-				charname = mngr.GetPlayerName(pid);
-				return;
+				SCR_PossessingManagerComponent m_PossessingManager = SCR_PossessingManagerComponent.Cast(GetGame().GetGameMode().FindComponent(SCR_PossessingManagerComponent));
+				if (m_PossessingManager)
+				{
+					pid = m_PossessingManager.GetIdFromMainEntity(parent);	// in case this is a main entity of someone whos currently possessing, consider it that player
+				}
 			}
+			else
+			{
+				charname = mngr.GetPlayerName(pid);
+			}
+			if (charname)
+				return;
 			parent = ChimeraCharacter.Cast(parent);
 			if(parent)
 			{
@@ -47,6 +60,10 @@ class DogTagEntity: GameEntity
 			ClearEventMask(EntityEvent.FRAME);
 		}
 	};
+	void UpdateNameToPL()
+	{
+		
+	}
 }
 class SP_DogtagPredicate : InventorySearchPredicate
 {

@@ -2,10 +2,16 @@ DogTagEntity {
  ID "5D887E24FD403BB4"
  components {
   InventoryItemComponent "{5D887E279A084149}" {
-   Attributes SCR_DogtagItemAttributeCollection "{5D887E279DE5DA78}" {
-    ItemDisplayName UIInfo "{5D887E279F662EC6}" {
+   Attributes SCR_ItemAttributeCollection "{5D887E279DE5DA78}" {
+    ItemDisplayName SCR_InventoryUIInfo "{5D887E279F662EC6}" {
      Name "US Dogtag"
      Description "Dogtag carried by each unit of major Military groups. Its used to identify dead bodies found on the field"
+     m_aItemHints {
+      SCR_DogaTagInventoryItemHintUIInfo "{5EE270CC4E1C3E14}" {
+       Name "Owner"
+       Icon "{128B100BD50BE1A8}UI/Images/InventoryIcons/InventorySlot_Neck.edds"
+      }
+     }
     }
     ItemPhysAttributes ItemPhysicalAttributes "{5D887E2780DF6A4A}" {
      Weight 0.005
@@ -25,6 +31,7 @@ DogTagEntity {
      }
     }
     CommonItemType "NONE"
+    m_bStackable 0
    }
   }
   MeshObject "{5D887E27EA3B722D}" {

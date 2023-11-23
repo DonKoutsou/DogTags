@@ -1,0 +1,55 @@
+SCR_ChimeraCharacter : "{37578B1666981FCE}Prefabs/Characters/Core/Character_Base.et" {
+ ID "520EC961A090B1EE"
+ components {
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   AttachType InventoryStorageSlot "{9113A68B4D97E2E6}" {
+    PivotID ""
+   }
+   HolsteredHidden 1
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Head {
+     AreaType ZEL_HeadArea "{5E9E96C395AA4052}" {
+     }
+    }
+    LoadoutSlotInfo Eyes {
+     AreaType ZEL_EyesArea "{5E9E96C395AA4059}" {
+     }
+    }
+    LoadoutSlotInfo Ears {
+     AreaType ZEL_EarsArea "{5E9E96C395AA4058}" {
+     }
+    }
+    LoadoutSlotInfo Face {
+     AreaType ZEL_FaceArea "{5E9E96C395AA405E}" {
+     }
+    }
+    LoadoutSlotInfo Neck {
+     AreaType ZEL_NeckArea "{5E9E96C395AA405D}" {
+     }
+    }
+    LoadoutSlotInfo Extra {
+     AreaType ZEL_ExtraArea "{5E9E96C395AA405C}" {
+     }
+    }
+    LoadoutSlotInfo Extra2 {
+     AreaType ZEL_ExtraArea2 "{5E9E96C395AA41A3}" {
+     }
+    }
+    LoadoutSlotInfo Waist {
+     AreaType ZEL_WaistArea "{5E9E96C395AA41A2}" {
+     }
+    }
+    LoadoutSlotInfo Hands {
+     AreaType ZEL_HandsArea "{5E9E96C395AA41A1}" {
+     }
+    }
+    LoadoutSlotInfo Extra3 {
+     AreaType ZEL_ExtraArea3 "{5E9E96C395AA41A0}" {
+     }
+    }
+   }
+  }
+ }
+}

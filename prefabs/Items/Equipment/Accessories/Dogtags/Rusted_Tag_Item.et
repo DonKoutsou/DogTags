@@ -48,10 +48,10 @@ GenericEntity {
    }
   }
   MeshObject "{5C7F06E0E023F36D}" {
-   Object "{99FE84401AD397C8}Assets/Items/Equipment/Accessories/DogTag/DogTag_single_Item.xob"
+   Object "{199CF8BC8625F201}Assets/Items/Equipment/Accessories/DogTag/DogTag_Item.xob"
    Materials {
-    MaterialAssignClass "{5C7F06E04A9692E9}" {
-     SourceMaterial "M_DogTag"
+    MaterialAssignClass "{5EE275AE9FB5E6DA}" {
+     SourceMaterial "M_DogTags"
      AssignedMaterial "{6F021F071CEA1545}Assets/Items/Equipment/Accessories/DogTag/data/M_DogTag_Rusted.emat"
     }
    }

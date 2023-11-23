@@ -2,9 +2,17 @@ DogTagEntity : "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Do
  ID "5104869D194C6243"
  components {
   InventoryItemComponent "{5D887E279A084149}" {
-   Attributes SCR_DogtagItemAttributeCollection "{5D887E279DE5DA78}" {
-    ItemDisplayName UIInfo "{5D887E279F662EC6}" {
+   Attributes SCR_ItemAttributeCollection "{5D887E279DE5DA78}" {
+    ItemDisplayName SCR_InventoryUIInfo "{5D887E279F662EC6}" {
      Name "FIA Dogtag"
+    }
+   }
+  }
+  MeshObject "{5D887E27EA3B722D}" {
+   Materials {
+    MaterialAssignClass "{5EE275AE51619B66}" {
+     SourceMaterial "M_DogTags"
+     AssignedMaterial "{5C11E6D26F1651EF}Assets/Items/Equipment/Accessories/DogTag/data/M_DogTag_FIA.emat"
     }
    }
   }
@@ -14,13 +22,6 @@ DogTagEntity : "{24F00E8AC2AC66DA}prefabs/Items/Equipment/Accessories/Dogtags/Do
    }
    ItemMaterialsOverride {
     "{5C11E6D26F1651EF}Assets/Items/Equipment/Accessories/DogTag/data/M_DogTag_FIA.emat"
-   }
-  }
-  ActionsManagerComponent "{5E0ECDDDB47A6F7C}" {
-   ActionContexts {
-    UserActionContext "{5174C3E8FCFF0CEB}" {
-     Radius 1
-    }
    }
   }
  }
