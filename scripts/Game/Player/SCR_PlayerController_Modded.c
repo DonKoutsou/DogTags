@@ -122,7 +122,7 @@ modded class SCR_PlayerController
 	}
 	void SetDogTagName(IEntity Char)
 	{
-		int id = GetPlayerId();
+		int id = SCR_PossessingManagerComponent.GetPlayerIdFromControlledEntity(Char);
 		EquipedLoadoutStorageComponent invman = EquipedLoadoutStorageComponent.Cast(Char.FindComponent(EquipedLoadoutStorageComponent));
 		if (!invman)
 			return;
